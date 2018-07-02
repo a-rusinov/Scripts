@@ -1,0 +1,22 @@
+
+    This script reads the event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational" from 
+    multiple servers and outputs the human-readable results to a CSV.  This data is not filterable in the native 
+    Windows Event Viewer.
+
+
+
+
+DESCRIPTION
+    This script reads the event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational" from 
+    multiple servers and outputs the human-readable results to a CSV.  This data is not filterable in the native 
+    Windows Event Viewer.
+
+    NOTE: Despite this log's name, it includes both RDP logins as well as regular console logins too.
+    
+  
+ .EXAMPLE
+ 
+    .\RDPConnectionParser.ps1 -ServersToQuery Server1, Server2 -StartTime "November 1"
+ 
+
+
